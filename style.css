@@ -1,0 +1,203 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-icon {
+    background: #ddd;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Main section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.text-section p {
+    font-size: 1.25rem;
+}
+
+.highlight {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.upload-section button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.upload-section button:hover {
+    background: #0056b3;
+}
+
+.upload-section p {
+    margin: 0.5rem 0;
+}
+
+.upload-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.upload-section a:hover {
+    text-decoration: underline;
+}
+
+
+
+.result-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#result-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background: #fff;
+    min-height: 300px;
+    border-radius: 40px;
+
+}
+
+/* General drop zone styling */
+.file-upload-container {
+    width: 400px;
+    border: 2px dashed #cccccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s, border-color 0.3s;
+}
+
+/* Hover effect (even if not dragging) */
+.file-upload-container:hover {
+    background-color: #e0f7fa;
+    border-color: #007bff;
+}
+
+/* Dragging state styling */
+.file-upload-container.dragging {
+    background-color: #d1ecf1;
+    border-color: #007bff;
+}
+
+/* File name display */
+.file-name {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Text above the input */
+.file-upload-container p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+
+
+.file-upload-container span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Hide default file input */
+.custom-file-input {
+    display: none;
+}
+
+/* Label styling */
+.file-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: #0056b3;
+}
+
+/* File name display */
