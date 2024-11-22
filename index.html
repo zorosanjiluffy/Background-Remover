@@ -121,6 +121,14 @@
 
 
             const apiKey = "3gQqfKyARhNqNcLckn7UViJV";
+
+            
+    const uploadButton = document.querySelector('.btn-primary');
+
+    // Change button text to "Wait a sec..."
+    uploadButton.textContent = "Wait a sec...";
+    uploadButton.disabled = true;
+            
             fetch('https://api.remove.bg/v1.0/removebg', {
                 method: 'POST',
                 headers: {
@@ -145,11 +153,20 @@
                     img.style.height = "auto";
                     resultContainer.appendChild(img);
 
+                        uploadButton.textContent = "Upload";
+            uploadButton.disabled = false;
+
+
                 })
 
 
                 .catch(function (error) {
                     console.error("Error:", error)
+
+                          uploadButton.textContent = "Upload";
+            uploadButton.disabled = false;
+
+            alert("Something went wrong. Please try again.");
                 });
 
 
